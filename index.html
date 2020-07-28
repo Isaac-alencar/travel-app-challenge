@@ -3,30 +3,129 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travvel App | Clone Challange</title>
+    <title>Travel App | Clone Challange</title>
     <link rel="stylesheet" href="/public/style.css" />
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/public/responsive.css" />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <div class="navbar">
-          <div class="info">
-            <p>About</p>
-            <p>Contanct</p>
+    <div class="background">
+      <div class="container">
+        <header>
+          <div class="navbar">
+            <div class="info">
+              <p>About</p>
+              <p>Contanct</p>
+            </div>
+
+            <p>Camping.</p>
+
+            <div class="actions">
+              <p>Sign In</p>
+              <p>Sign Up</p>
+              <iconify-icon data-icon="ri:search-line"></iconify-icon>
+            </div>
           </div>
-          <p>Camping.</p>
-          <div class="actions">
-            <p>Sign In</p>
-            <p>Sign Up</p>
-            <iconify-icon data-icon="ri:search-line"></iconify-icon>
+        </header>
+        <main>
+          <div class="title">
+            <h1>Beatful Places of England</h1>
+            <p>
+              Plan your vacation on the most beatiful<br />
+              places of England
+            </p>
+          </div>
+          <div class="card-up-next">
+            <div class="description-card">
+              <p>Up next</p>
+              <h3>Aerial View of Rock Cliffs</h3>
+              <span
+                class="iconify"
+                data-icon="bi:arrow-right"
+                data-inline="false"
+              ></span>
+            </div>
+            <div class="preview"></div>
+          </div>
+        </main>
+        <div class="book-vocation">
+          <h4>Book your vocation</h4>
+          <div class="book-options">
+            <div class="options">
+              <div class="accomodation">
+                <span
+                  class="iconify"
+                  data-icon="jam:home"
+                  data-inline="false"
+                ></span>
+                <div class="text">
+                  <p>
+                    Accomodation<br /><span
+                      >6730 Lana Land North Rhiannonmounth</span
+                    >
+                  </p>
+                </div>
+                <span
+                  class="iconify"
+                  data-icon="bi:chevron-down"
+                  data-inline="false"
+                ></span>
+              </div>
+
+              <div class="check-in">
+                <span
+                  class="iconify"
+                  data-icon="ant-design:calendar-outlined"
+                  data-inline="false"
+                ></span>
+                <div class="text">
+                  <p>Check-in<br /><span>27.07.2020</span></p>
+                </div>
+                <span
+                  class="iconify"
+                  data-icon="bi:chevron-down"
+                  data-inline="false"
+                ></span>
+              </div>
+
+              <div class="check-out">
+                <div class="text">
+                  <p>Check-out<br /><span>27.07.2020</span></p>
+                </div>
+                <span
+                  class="iconify"
+                  data-icon="bi:chevron-down"
+                  data-inline="false"
+                ></span>
+              </div>
+
+              <div class="guest">
+                <span
+                  class="iconify"
+                  data-icon="ant-design:user-outlined"
+                  data-inline="false"
+                ></span>
+                <div class="text">
+                  <p>
+                    Guest<br />
+                    <span>4 Adults</span>
+                  </p>
+                </div>
+                <span
+                  class="iconify"
+                  data-icon="bi:chevron-down"
+                  data-inline="false"
+                ></span>
+              </div>
+            </div>
+            <button>Search</button>
           </div>
         </div>
-      </header>
+      </div>
     </div>
   </body>
 </html>

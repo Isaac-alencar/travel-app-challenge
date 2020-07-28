@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+
+  box-sizing: border-box;
+}
+@media (max-width: 1366px) {
+  html,
+  body,
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .header {
+    width: 100%;
+    padding: 16px;
+  }
+  .container header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    width: 87.5%;
+
+    border-bottom: 1px solid #e7e7f234;
+  }
+  .container header .navbar .info p,
+  .container header .navbar .actions p {
+    margin: 28px 0;
+    padding: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: calc(100% - 16px);
+    color: #fff;
+  }
+  .container main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px 0 0 90px;
+  }
+  .container main .title {
+    margin: 152px 0;
+    width: 500px;
+  }
+  .container main .title h1 {
+    font-size: 72px;
+    font-weight: 900;
+  }
+  .container main .card-up-next {
+    display: flex;
+    justify-content: space-between;
+
+    width: 400px;
+    height: 300px;
+
+    border-radius: 16px 0 0 16px;
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+  .container main .description-card p {
+    margin: 16px 36px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+  }
+  .container main .description-card h3 {
+    margin: 45px 36px;
+    width: 204px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #fff;
+  }
+  .container .book-vocation {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 220px;
+    margin: 0 auto;
+    border-radius: 20px 20px 0 0;
+    background-color: #4e4e4e;
+  }
+  .container .book-vocation .options {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    border-radius: 10px;
+  }
+  .container .book-vocation .options .accomodation p,
+  .check-in .text p,
+  .check-out .text p,
+  .guest .text p {
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    color: #fff;
+  }
+  .container .book-vocation .options .accomodation p span,
+  .check-in .text p span,
+  .check-out .text p span,
+  .guest .text p span {
+    font-size: 12px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    color: #fff;
+  }
+  .container .book-vocation button {
+    margin-left: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #91cb82;
+    color: #fff;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    line-height: 20px;
+    font-size: 16px;
+  }
+}

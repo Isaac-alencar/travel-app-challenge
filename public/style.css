@@ -5,19 +5,31 @@
 
   box-sizing: border-box;
 }
+html ::-webkit-scrollbar {
+  display: none;
+}
 html,
 body,
 .container {
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
-.container {
-  padding: 10px;
 
+/* Image for background */
+.background {
   background-image: url("/images/long-range-forecast.jpg");
   background-position: center;
   background-size: cover;
 }
 
+/* Real content off page */
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(51, 51, 51, 0.438);
+}
+
+/* Header styles */
 .container header {
   width: 100%;
   padding: 16px;
@@ -28,10 +40,10 @@ body,
   align-items: center;
   justify-content: space-between;
 
-  margin: 0 240px;
+  margin: 42px 240px;
   max-width: 90%;
 
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #e7e7f234;
 }
 .container header .navbar .info,
 .container header .navbar .actions {
@@ -40,6 +52,7 @@ body,
 }
 .container header .navbar .info p,
 .container header .navbar .actions p {
+  margin: 28px 0;
   padding: 16px;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
@@ -48,12 +61,177 @@ body,
   color: #fff;
 }
 [data-icon="ri:search-line"] {
-  color: #fff;
+  color: #e7e7f2bd;
 }
 .container header .navbar p {
+  margin: 28px 0;
   letter-spacing: 1%;
   font-size: 24px;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 900;
   color: #fff;
+}
+/* End of header */
+
+/* Maiin Styles */
+.container main {
+  display: flex;
+  justify-content: space-between;
+  margin: 202px 0 366px 240px;
+}
+.container main .title {
+  margin: 152px 0;
+  width: 860px;
+}
+.container main .title h1,
+.container main .title p {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
+}
+.container main .title h1 {
+  font-size: 96px;
+  font-weight: 900;
+}
+.container main .title p {
+  margin: 32px 0;
+  font-family: 28px;
+}
+
+.container main .card-up-next {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 24px 0;
+
+  width: 570px;
+  height: 400px;
+
+  border-radius: 16px 0 0 16px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.container main .description-card p {
+  margin: 38px 36px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  color: #fff;
+}
+.container main .description-card h3 {
+  margin: 79px 36px;
+  width: 204px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #fff;
+}
+[data-icon="bi:arrow-right"] {
+  margin: 0 36px 0;
+  width: 43px;
+  height: 43px;
+  color: #fff;
+}
+.container main .card-up-next .preview {
+  width: 300px;
+  height: 100%;
+  background-image: url("/images/card_preview.jpeg");
+  background-position: right;
+  background-size: cover;
+}
+
+.container .book-vocation {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 1440px;
+  margin: 0 auto;
+  padding: 73px 48px 56px 48px;
+  border-radius: 20px 20px 0 0;
+  background-color: #4e4e4e;
+}
+
+.container .book-vocation h4 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 31px 0;
+}
+
+.container .book-vocation .book-options {
+  display: flex;
+  align-items: center;
+}
+
+.container .book-vocation .options {
+  display: flex;
+  width: 87.9%;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.container .book-vocation .options .accomodation,
+.check-in,
+.check-out,
+.guest {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.container .book-vocation .options .accomodation p,
+.check-in .text p,
+.check-out .text p,
+.guest .text p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+.container .book-vocation .options .accomodation p span,
+.check-in .text p span,
+.check-out .text p span,
+.guest .text p span {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+.container .book-vocation .accomodation,
+.check-in,
+.check-out {
+  border-right: 1px solid #fff;
+}
+
+.iconify {
+  width: 28px;
+  height: 28px;
+  margin-right: 20px;
+  color: #e7e7f2;
+}
+[data-icon="jam:home"] {
+  margin-left: 36px;
+}
+
+/* Search button */
+.container .book-vocation button {
+  margin-left: 30px;
+  padding: 20px 32px;
+  width: 240px;
+  border: none;
+  border-radius: 10px;
+  background-color: #91cb82;
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  line-height: 20px;
+  font-size: 18px;
+}
+
+.container .book-vocation button:hover {
+  opacity: 0.8;
 }
